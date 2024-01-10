@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Калькулятор дохода</title>
+		<link rel="stylesheet" href="./styles/index.css" />
+	</head>
+	<body>
+		<section class="calculator">
+			<div class="inner-wrapper">
+				<h2 class="calculator__title">Калькулятор дохода</h2>
+				<div class="calculator__tabs-wrapper">
+					<h3 class="calculator__subtitle">Выберите отель</h3>
+					<div class="calculator__tabs">
+                        <button class="calculator__tab calculator__tab_active" id="aqua">AQUA</button>
+                        <button class="calculator__tab" id="familyClub">FAMILY CLUB</button>
+                        <button class="calculator__tab" id="riviera">RIVIERA</button>
+                        <button class="calculator__tab calculator__tab_hidden" id="villas">villas</button>
+                    </div>
+				</div>
+                <div class="calculator__content calculator__content_active" id="aqua">
+                    <p class="calculator__description">20-этажный отель с&nbsp;санаторными функциями, медицинской клиникой, аквазоной и&nbsp;основной инфраструктурой комплекса в&nbsp;шаговой доступности.</p>
+                    <h3 class="calculator__subtitle">Выберите процент доли</h3>
+                    <div class="calculator__buttons">
+                        <button class="calculator__button calculator__button_active">25%</button>
+                        <button class="calculator__button">50%</button>
+                        <button class="calculator__button">75%</button>
+                        <button class="calculator__button">100%</button>
+                    </div>
+                    <img src="./images/aqua-left.png" alt="AQUA" class="calculator__image calculator__image_left">
+                    <img src="./images/aqua-right.png" alt="AQUA" class="calculator__image calculator__image_right">
+                    <div class="calculator__results">
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Стоимость</p>
+                            <p class="calculator__result-right">от $<span>48 850</span></p>
+                        </div>
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Рассрочка 0%</p>
+                            <p class="calculator__result-right">30 месяцев</p>
+                        </div>
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Ежемесячный платеж</p>
+                            <p class="calculator__result-right">от&nbsp;$<span>1139</span></p>
+                        </div>
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Возможность отдыха</p>
+                            <p class="calculator__result-right">15 дней в&nbsp;году</p>
+                        </div>
+                        <p class="calculator__total">Ваш доход&nbsp;<span>$4 529</span>&nbsp;в&nbsp;год</p>
+                        <a href="#" class="calculator__submit">Получить консультацию</a>
+                    </div>
+                </div>
+                <div class="calculator__content calculator__content_deactive" id="familyClub">
+                    <p class="calculator__description">20-этажный отель с&nbsp;санаторными функциями, медицинской клиникой, аквазоной и&nbsp;основной инфраструктурой комплекса в&nbsp;шаговой доступности.</p>
+                    <h3 class="calculator__subtitle">Выберите процент доли</h3>
+                    <div class="calculator__buttons">
+                        <button class="calculator__button calculator__button_active">25%</button>
+                        <button class="calculator__button">50%</button>
+                        <button class="calculator__button">75%</button>
+                        <button class="calculator__button">100%</button>
+                    </div>
+                    <img src="./images/aqua-left.png" alt="AQUA" class="calculator__image calculator__image_left">
+                    <img src="./images/aqua-right.png" alt="AQUA" class="calculator__image calculator__image_right">
+                    <div class="calculator__results">
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Стоимость</p>
+                            <p class="calculator__result-right">от $<span>48 850</span></p>
+                        </div>
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Рассрочка 0%</p>
+                            <p class="calculator__result-right">30 месяцев</p>
+                        </div>
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Ежемесячный платеж</p>
+                            <p class="calculator__result-right">от&nbsp;$<span>1139</span></p>
+                        </div>
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Возможность отдыха</p>
+                            <p class="calculator__result-right">15 дней в&nbsp;году</p>
+                        </div>
+                        <p class="calculator__total">Ваш доход&nbsp;<span>$4 529</span>&nbsp;в&nbsp;год</p>
+                        <a href="#" class="calculator__submit">Получить консультацию</a>
+                    </div>
+                </div>
+                <div class="calculator__content calculator__content_deactive" id="riviera">
+                    <p class="calculator__description">20-этажный отель с&nbsp;санаторными функциями, медицинской клиникой, аквазоной и&nbsp;основной инфраструктурой комплекса в&nbsp;шаговой доступности.</p>
+                    <h3 class="calculator__subtitle">Выберите процент доли</h3>
+                    <div class="calculator__buttons">
+                        <button class="calculator__button calculator__button_active">25%</button>
+                        <button class="calculator__button">50%</button>
+                        <button class="calculator__button">75%</button>
+                        <button class="calculator__button">100%</button>
+                    </div>
+                    <img src="./images/aqua-left.png" alt="AQUA" class="calculator__image calculator__image_left">
+                    <img src="./images/aqua-right.png" alt="AQUA" class="calculator__image calculator__image_right">
+                    <div class="calculator__results">
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Стоимость</p>
+                            <p class="calculator__result-right">от $<span>48 850</span></p>
+                        </div>
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Рассрочка 0%</p>
+                            <p class="calculator__result-right">30 месяцев</p>
+                        </div>
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Ежемесячный платеж</p>
+                            <p class="calculator__result-right">от&nbsp;$<span>1139</span></p>
+                        </div>
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Возможность отдыха</p>
+                            <p class="calculator__result-right">15 дней в&nbsp;году</p>
+                        </div>
+                        <p class="calculator__total">Ваш доход&nbsp;<span>$4 529</span>&nbsp;в&nbsp;год</p>
+                        <a href="#" class="calculator__submit">Получить консультацию</a>
+                    </div>
+                </div>
+                <div class="calculator__content calculator__content_deactive" id="villas">
+                    <p class="calculator__description">20-этажный отель с&nbsp;санаторными функциями, медицинской клиникой, аквазоной и&nbsp;основной инфраструктурой комплекса в&nbsp;шаговой доступности.</p>
+                    <h3 class="calculator__subtitle">Выберите процент доли</h3>
+                    <div class="calculator__buttons">
+                        <button class="calculator__button calculator__button_active">25%</button>
+                        <button class="calculator__button">50%</button>
+                        <button class="calculator__button">75%</button>
+                        <button class="calculator__button">100%</button>
+                    </div>
+                    <img src="./images/aqua-left.png" alt="AQUA" class="calculator__image calculator__image_left">
+                    <img src="./images/aqua-right.png" alt="AQUA" class="calculator__image calculator__image_right">
+                    <div class="calculator__results">
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Стоимость</p>
+                            <p class="calculator__result-right">от $<span>48 850</span></p>
+                        </div>
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Рассрочка 0%</p>
+                            <p class="calculator__result-right">30 месяцев</p>
+                        </div>
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Ежемесячный платеж</p>
+                            <p class="calculator__result-right">от&nbsp;$<span>1139</span></p>
+                        </div>
+                        <div class="calculator__result-row">
+                            <p class="calculator__result-left">Возможность отдыха</p>
+                            <p class="calculator__result-right">15 дней в&nbsp;году</p>
+                        </div>
+                        <p class="calculator__total">Ваш доход&nbsp;<span>$4 529</span>&nbsp;в&nbsp;год</p>
+                        <a href="#" class="calculator__submit">Получить консультацию</a>
+                    </div>
+                </div>
+			</div>
+		</section>
+
+		<script src="./scripts/index.js"></script>
+	</body>
+</html>
