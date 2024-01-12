@@ -21,6 +21,11 @@
 		font-weight: 400;
 		line-height: 100%;
 		margin: 0 0 56px 0;
+
+		@media screen and (max-width: $hor-mobile) {
+			font-size: 20px;
+			margin: 0 0 30px 0;
+		}
 	}
 
 	&__tabs-wrapper {
@@ -39,13 +44,76 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: 100%;
-		margin: 0 0 20px 0;
+		margin: 0;
+
+		@media screen and (max-width: $hor-mobile) {
+			font-size: 16px;
+		}
+	}
+
+	&__select {
+		@media screen and (min-width: calc($hor-mobile + 1px)) {
+			display: none;
+		}
+
+		border-radius: 4px;
+		border: 1px solid #e8ded3;
+		background: none;
+		padding: 16px 30px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 100%;
+		letter-spacing: 0.56px;
+		text-transform: uppercase;
+		color: #e8ded3;
+		font-family: Montserrat;
+
+		img {
+			transform: rotate(0deg);
+			transition: 0.3s;
+		}
+
+		&_opened ~ .calculator__tabs {
+			max-height: 1000px;
+			transition: 0.2s;
+		}
+
+		&_opened ~ img {
+			transition: 0.2s;
+			transform: rotate(180deg);
+		}
+	}
+
+	&__select-wrapper {
+		width: 100%;
+		position: relative;
+		@media screen and (max-width: $hor-mobile) {
+			margin-bottom: 26px;
+		}
 	}
 
 	&__tabs {
 		width: 100%;
 		display: flex;
 		margin-bottom: 26px;
+
+		@media screen and (max-width: $hor-mobile) {
+			flex-direction: column;
+			background: #55565a;
+			position: absolute;
+			top: 48px;
+			z-index: 5;
+			margin-bottom: 0;
+			max-height: 0;
+			transition: 0.3s;
+			overflow: hidden;
+			border-radius: 0px 0px 4px 4px;
+		}
 	}
 
 	&__tab {
@@ -71,9 +139,22 @@
 		text-transform: uppercase;
 		transition: 0.3s;
 
+		@media screen and (max-width: $hor-mobile) {
+			font-size: 14px;
+			height: 48px;
+			padding: 0 30px;
+			align-items: flex-start;
+		}
+
 		&_active {
 			transition: 0.3s;
 			border-bottom: 3px solid #e8ded3;
+
+			@media screen and (max-width: $hor-mobile) {
+				background: #e8ded3;
+				border-bottom: none;
+				color: #282829;
+			}
 		}
 
 		&_hidden {
@@ -100,6 +181,10 @@
 
 		.calculator__subtitle {
 			margin: 0 0 40px 0;
+
+			@media screen and (max-width: $hor-mobile) {
+				margin: 0 0 30px 0;
+			}
 		}
 
 		&_active {
@@ -124,12 +209,24 @@
 		&_min {
 			max-width: 520px;
 		}
+
+		@media screen and (max-width: $hor-mobile) {
+			font-size: 14px;
+			margin: 0 0 30px 0;
+		}
 	}
 
 	&__buttons {
 		width: 100%;
 		display: flex;
 		margin-bottom: 68px;
+
+		@media screen and (max-width: $hor-mobile) {
+			display: grid;
+			margin-bottom: 26px;
+			grid-template-columns: 1fr 1fr;
+			gap: 5px;
+		}
 	}
 
 	&__button {
@@ -150,6 +247,10 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: 100%;
+
+		@media screen and (max-width: $hor-mobile) {
+			font-size: 18px;
+		}
 
 		&:first-of-type {
 			border-radius: 3px 0 0 3px;
@@ -181,10 +282,26 @@
 
 		&_left {
 			right: 705px;
+
+			@media screen and (max-width: $ver-tablet) {
+				right: 575px;
+			}
+
+			@media screen and (max-width: $hor-mobile) {
+				position: relative;
+				bottom: unset;
+				right: unset;
+				margin-bottom: 26px;
+				width: 103vw;
+			}
 		}
 
 		&_right {
 			left: 705px;
+
+			@media screen and (max-width: $ver-tablet) {
+				left: 575px;
+			}
 		}
 	}
 
@@ -193,6 +310,11 @@
 		flex-direction: column;
 		width: 440px;
 		margin-bottom: 92px;
+
+		@media screen and (max-width: $hor-mobile) {
+			width: 100%;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__result-row {
@@ -205,15 +327,23 @@
 			color: #e8ded3;
 			margin: 12px 0;
 			font-family: Montserrat;
-			font-size: 15px;
+			font-size: 14px;
 			font-style: normal;
 			font-weight: 400;
 			line-height: 100%;
+
+			@media screen and (max-width: $hor-mobile) {
+				margin: 15px 0;
+			}
 		}
 
 		&:first-of-type {
 			p {
 				margin: 0 0 12px 0;
+
+				@media screen and (max-width: $hor-mobile) {
+					margin: 0 0 15px 0;
+				}
 			}
 		}
 
@@ -221,8 +351,16 @@
 			border-bottom: none;
 			margin-bottom: 20px;
 
+			@media screen and (max-width: $hor-mobile) {
+				margin-bottom: 26px;
+			}
+
 			p {
 				margin: 12px 0 0 0;
+
+				@media screen and (max-width: $hor-mobile) {
+					margin: 15px 0 0 0;
+				}
 			}
 		}
 	}
@@ -241,13 +379,23 @@
 		color: #fff;
 		margin: 0 0 24px 0;
 
+		@media screen and (max-width: $hor-mobile) {
+			font-size: 16px;
+			margin: 0 0 15px 0;
+			padding: 20px 0;
+		}
+
 		span {
 			font-size: 24px;
+
+			@media screen and (max-width: $hor-mobile) {
+				font-size: 22px;
+			}
 		}
 	}
 
 	&__submit {
-		border-radius: 2.74px;
+		border-radius: 3px;
 		border: 1px solid #000;
 		background: #fff;
 		padding: 22px 0;
@@ -263,6 +411,11 @@
 		color: #282829;
 		text-decoration: none;
 		transition: 0.3s;
+
+		@media screen and (max-width: $hor-mobile) {
+			font-size: 14px;
+			padding: 20px 0;
+		}
 
 		&:hover {
 			transition: 0.3s;
