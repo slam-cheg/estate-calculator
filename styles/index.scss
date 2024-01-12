@@ -6,17 +6,7 @@
 	src: url(../fonts/Prata-Regular.woff) format("woff"), url(../fonts/Prata-Regular.woff2) format("woff2");
 }
 
-@font-face {
-	font-family: "Gotham Pro";
-	font-weight: 400;
-	src: url(../fonts/gothampro.woff2) format("woff2"), url(../fonts/gothampro.woff) format("woff");
-}
-
-@font-face {
-	font-family: "Gotham Pro";
-	font-weight: 700;
-	src: url(../fonts/gothampro_bold.woff) format("woff"), url(../fonts/gothampro_bold.woff2) format("woff2");
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
 .calculator {
 	background: #282829;
@@ -44,7 +34,7 @@
 
 	&__subtitle {
 		color: #fff;
-		font-family: Gotham Pro;
+		font-family: Montserrat;
 		font-size: 27px;
 		font-style: normal;
 		font-weight: 400;
@@ -71,7 +61,7 @@
 		border: none;
 		border-bottom: 3px solid #55565a;
 		color: #e8ded3;
-		font-family: Gotham Pro;
+		font-family: Montserrat;
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 400;
@@ -113,7 +103,7 @@
 		}
 
 		&_active {
-            transition: .5s;
+			transition: 0.5s;
 			opacity: 1;
 			visibility: visible;
 			max-height: 100%;
@@ -122,24 +112,24 @@
 	}
 
 	&__description {
-		color: #fff;
+		color: #d4d4d4;
 		text-align: center;
-		font-family: Gotham Pro;
+		font-family: Montserrat;
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 400;
-		line-height: 23px;
+		line-height: 21px;
 		margin: 0 0 40px 0;
 
-        &_min {
-            max-width: 520px;
-        }
+		&_min {
+			max-width: 520px;
+		}
 	}
 
 	&__buttons {
 		width: 100%;
 		display: flex;
-		margin-bottom: 102px;
+		margin-bottom: 68px;
 	}
 
 	&__button {
@@ -155,12 +145,11 @@
 		transition: 0.3s;
 		background: none;
 		outline: none;
-		font-family: Gotham Pro;
+		font-family: Montserrat;
 		font-size: 20px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: 100%;
-		transition: 0.3s;
 
 		&:first-of-type {
 			border-radius: 3px 0 0 3px;
@@ -187,7 +176,7 @@
 
 	&__image {
 		position: absolute;
-		bottom: 0;
+		bottom: 92px;
 		border-radius: 7px;
 
 		&_left {
@@ -214,8 +203,8 @@
 
 		p {
 			color: #e8ded3;
-			margin: 14px 0;
-			font-family: Gotham Pro;
+			margin: 12px 0;
+			font-family: Montserrat;
 			font-size: 15px;
 			font-style: normal;
 			font-weight: 400;
@@ -224,7 +213,7 @@
 
 		&:first-of-type {
 			p {
-				margin: 0 0 14px 0;
+				margin: 0 0 12px 0;
 			}
 		}
 
@@ -233,7 +222,7 @@
 			margin-bottom: 20px;
 
 			p {
-				margin: 14px 0 0 0;
+				margin: 12px 0 0 0;
 			}
 		}
 	}
@@ -241,19 +230,19 @@
 	&__total {
 		border-radius: 3px;
 		border: 1px solid #fff;
-		padding: 28px 0;
+		padding: 25px 0;
 		display: flex;
 		justify-content: center;
 		font-family: Prata;
-		font-size: 21px;
+		font-size: 18px;
 		font-style: normal;
 		font-weight: 400;
-		line-height: 150%;
+		line-height: 100%;
 		color: #fff;
 		margin: 0 0 24px 0;
 
 		span {
-			font-size: 27px;
+			font-size: 24px;
 		}
 	}
 
@@ -264,11 +253,11 @@
 		padding: 22px 0;
 		display: flex;
 		justify-content: center;
-		font-family: Gotham Pro;
-		font-size: 17px;
+		font-family: Montserrat;
+		font-size: 16px;
 		font-style: normal;
 		font-weight: 700;
-		line-height: 150%;
+		line-height: 100%;
 		letter-spacing: 0.712px;
 		text-transform: uppercase;
 		color: #282829;
