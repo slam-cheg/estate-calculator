@@ -432,5 +432,6 @@
 }
 .calculator__submit:hover {
   transition: 0.3s;
-  background: #434343;
+  background: #9e4a33;
+  color: #fff !important;
 }
