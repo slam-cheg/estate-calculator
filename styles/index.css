@@ -284,6 +284,12 @@
   background: #e8ded3;
   color: #282829;
 }
+@media screen and (max-width: 639px) {
+  .calculator__button_mobile-wide {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
 .calculator__image {
   position: absolute;
   bottom: 92px;

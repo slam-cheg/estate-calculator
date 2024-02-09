@@ -273,6 +273,13 @@
 			background: #e8ded3;
 			color: #282829;
 		}
+
+		&_mobile-wide {
+			@media screen and (max-width: $hor-mobile) {
+				grid-column-start: 1;
+				grid-column-end: 3;
+			}
+		}
 	}
 
 	&__image {
