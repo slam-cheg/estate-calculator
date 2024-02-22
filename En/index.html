@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-En">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Income Calculator</title>
+		<link rel="stylesheet" href="../styles/index.css" />
+	</head>
+	<body style="margin: 0; padding: 0">
+		<section class="calculator">
+			<div class="inner-wrapper">
+				<h2 class="calculator__title">Income Calculator</h2>
+				<div class="calculator__tabs-wrapper">
+					<h3 class="calculator__subtitle">Select a hotel</h3>
+					<div class="calculator__select-wrapper">
+						<button class="calculator__select"><span>Aqua</span><img src="https://static.tildacdn.com/tild6335-3531-4335-a561-653433656533/arrow.svg" alt="arrow" /></button>
+						<div class="calculator__tabs">
+							<button class="calculator__tab calculator__tab_active" id="aqua">AQUA</button>
+							<button class="calculator__tab" id="familyClub">FAMILY CLUB</button>
+							<button class="calculator__tab" id="riviera">RIVIERA</button>
+							<button class="calculator__tab calculator__tab_hidden" id="villas">villas</button>
+						</div>
+					</div>
+				</div>
+				<div class="calculator__content calculator__content_active" id="aqua">
+					<img src="https://static.tildacdn.com/tild6564-3535-4662-b162-343264656537/aqua-left.png" alt="AQUA" class="calculator__image calculator__image_left" />
+					<img src="https://static.tildacdn.com/tild6261-3063-4362-b234-353734336266/aqua-right.png" alt="AQUA" class="calculator__image calculator__image_right" />
+					<p class="calculator__description">A&nbsp;towering 20-story hotel boasting spa facilities, a&nbsp;medical clinic, a&nbsp;water park, and convenient access to&nbsp;the main complex infrastructure.</p>
+					<h3 class="calculator__subtitle">Choose your ownership percentage</h3>
+					<div class="calculator__buttons">
+						<button class="calculator__button calculator__button_active" data-percent="25">25%</button>
+						<button class="calculator__button" data-percent="50">50%</button>
+						<button class="calculator__button" data-percent="75">75%</button>
+						<button class="calculator__button" data-percent="100">100%</button>
+					</div>
+					<div class="calculator__results">
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Price&nbsp;&mdash; from</p>
+							<p class="calculator__result-right" id="price">от <span>$49&nbsp;825</span></p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Down payment 30%</p>
+							<p class="calculator__result-right" id="first">$14 948</p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Installment 0%</p>
+							<p class="calculator__result-right" id="istallment">24 month</p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Monthly payment&nbsp;&mdash; from</p>
+							<p class="calculator__result-right" id="monthly">от&nbsp;<span>$1&nbsp;453</span></p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Holiday stay</p>
+							<p class="calculator__result-right" id="freeRest"><span>15 days</span> per year</p>
+						</div>
+						<p class="calculator__total" id="profit">Your income minimum&nbsp;<span>$4&nbsp;534</span>&nbsp;per year</p>
+						<a href="#popup:form" class="calculator__submit">Request Presentation</a>
+					</div>
+				</div>
+				<div class="calculator__content" id="familyClub">
+					<img src="https://static.tildacdn.com/tild3761-6139-4433-b664-353938663761/family-left.png" alt="Family Club" class="calculator__image calculator__image_left" />
+					<img src="https://static.tildacdn.com/tild3664-3934-4366-a362-653439323035/family-right.png" alt="Family Club" class="calculator__image calculator__image_right" />
+					<p class="calculator__description">Low-rise family-oriented residences offering an&nbsp;exclusive club experience. The suites tailored for newlyweds and families, including two-story penthouses.</p>
+					<h3 class="calculator__subtitle">Choose your ownership percentage</h3>
+					<div class="calculator__buttons">
+						<button class="calculator__button calculator__button_active" data-percent="25">25%</button>
+						<button class="calculator__button" data-percent="50">50%</button>
+						<button class="calculator__button" data-percent="75">75%</button>
+						<button class="calculator__button" data-percent="100">100%</button>
+					</div>
+					<div class="calculator__results">
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Price&nbsp;&mdash; from</p>
+							<p class="calculator__result-right" id="price">от <span>$136&nbsp;250</span></p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Down payment 30%</p>
+							<p class="calculator__result-right" id="first">$22 995</p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Installment 0%</p>
+							<p class="calculator__result-right" id="istallment">24 month</p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Monthly payment&nbsp;&mdash; from</p>
+							<p class="calculator__result-right" id="monthly">от&nbsp;<span>$5&nbsp;299</span></p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Holiday stay</p>
+							<p class="calculator__result-right" id="freeRest"><span>15 days</span> per year</p>
+						</div>
+						<p class="calculator__total" id="profit">Your income minimum&nbsp;<span>$13&nbsp;216</span>&nbsp;per year</p>
+						<a href="#popup:form" class="calculator__submit">Request Presentation</a>
+					</div>
+				</div>
+				<div class="calculator__content" id="riviera">
+					<img src="https://static.tildacdn.com/tild3239-6664-4632-a463-643432366463/rivera-left.png" alt="Riviera" class="calculator__image calculator__image_left" />
+					<img src="https://static.tildacdn.com/tild3034-6338-4230-b939-313430363336/rivera-right.png" alt="Riviera" class="calculator__image calculator__image_right" />
+					<p class="calculator__description">Three-story hotel townhouses perched on&nbsp;a&nbsp;mountainside, offering the ultimate in&nbsp;luxury with a&nbsp;premium take on&nbsp;the presidential suite. Ideal for an&nbsp;intimate and secluded getaway.</p>
+					<h3 class="calculator__subtitle">Choose your ownership percentage</h3>
+					<div class="calculator__buttons">
+						<button class="calculator__button calculator__button_active" data-percent="12.5">12.5%</button>
+						<button class="calculator__button" data-percent="25">25%</button>
+						<button class="calculator__button" data-percent="50">50%</button>
+						<button class="calculator__button" data-percent="75">75%</button>
+						<button class="calculator__button calculator__button_mobile-wide" data-percent="100">100%</button>
+					</div>
+
+					<div class="calculator__results">
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Price&nbsp;&mdash; from</p>
+							<p class="calculator__result-right" id="price">от <span>$77&nbsp;000</span></p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Down payment 30%</p>
+							<p class="calculator__result-right" id="first">$23 100</p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Installment 0%</p>
+							<p class="calculator__result-right" id="istallment">18 месяцев</p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Monthly payment&nbsp;&mdash; from</p>
+							<p class="calculator__result-right" id="monthly">от&nbsp;<span>$2&nbsp;994</span></p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Holiday stay</p>
+							<p class="calculator__result-right" id="freeRest"><span>15 days</span> per year</p>
+						</div>
+						<p class="calculator__total" id="profit">Your income minimum&nbsp;<span>$6&nbsp;586</span>&nbsp;per year</p>
+						<a href="#popup:form" class="calculator__submit">Request Presentation</a>
+					</div>
+				</div>
+				<div class="calculator__content" id="villas">
+					<img src="https://static.tildacdn.com/tild3334-6362-4365-a231-656266313630/villas-left.png" alt="villas" class="calculator__image calculator__image_left" />
+					<img src="https://static.tildacdn.com/tild3234-3162-4633-a263-613837333964/villas-right.png" alt="villas" class="calculator__image calculator__image_right" />
+					<p class="calculator__description">Комплекс Villas включает в&nbsp;себя 16&nbsp;эксклюзивных вилл, которые сочетают в&nbsp;себе элегантность, комфорт и&nbsp;восхитительные пейзажи. Каждая вилла впечатляет своим искусным проектированием, включающим три этажа современных удобств и&nbsp;интерьером премиум-класса.</p>
+					<h3 class="calculator__subtitle">Choose your ownership percentage</h3>
+					<div class="calculator__buttons">
+						<button class="calculator__button calculator__button_active" data-percent="25">25%</button>
+						<button class="calculator__button" data-percent="50">50%</button>
+						<button class="calculator__button" data-percent="75">75%</button>
+						<button class="calculator__button" data-percent="100">100%</button>
+					</div>
+
+					<div class="calculator__results">
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Price&nbsp;&mdash; from</p>
+							<p class="calculator__result-right" id="price">от <span>$76&nbsp;650</span></p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Down payment 30%</p>
+							<p class="calculator__result-right" id="first">$40 875</p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Installment 0%</p>
+							<p class="calculator__result-right" id="istallment">24 month</p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Monthly payment&nbsp;&mdash; from</p>
+							<p class="calculator__result-right" id="monthly">от&nbsp;<span>$2&nbsp;236</span></p>
+						</div>
+						<div class="calculator__result-row">
+							<p class="calculator__result-left">Holiday stay</p>
+							<p class="calculator__result-right" id="freeRest"><span>15 days</span> per year</p>
+						</div>
+						<p class="calculator__total" id="profit">Your income minimum&nbsp;<span>$7&nbsp;128</span>&nbsp;per year</p>
+						<a href="#popup:form" class="calculator__submit">Request Presentation</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
