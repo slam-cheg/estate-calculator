@@ -389,7 +389,10 @@
 		@media screen and (max-width: $hor-mobile) {
 			font-size: 16px;
 			margin: 0 0 15px 0;
-			padding: 20px 0;
+			padding: 20px;
+			text-align: center;
+			gap: 20px;
+			align-items: center;
 		}
 
 		span {
